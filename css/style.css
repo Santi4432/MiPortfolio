@@ -1,0 +1,133 @@
+/* style.css - Estética dramática para portfolio de Santiago */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #e50914; /* rojo cinematográfico */
+  }
+  
+  nav a {
+    color: #f0f0f0;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #e50914;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #0a0a0a, #111);
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: #aaa;
+  }
+  
+  section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 28px;
+    border-left: 4px solid #e50914;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+  }
+  
+  .video-item {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .video-item h3 {
+    margin: 0;
+    color: #f0f0f0;
+    font-size: 18px;
+  }
+  
+  .video-item p {
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  #sobre-mi p, #contacto p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  #contacto a {
+    color: #e50914;
+    text-decoration: none;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #111;
+    color: #777;
+    border-top: 1px solid #333;
+  }
+  
+  @media (max-width: 600px) {
+    .hero h2 {
+      font-size: 28px;
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav a {
+      margin: 10px;
+    }
+  }
+  
